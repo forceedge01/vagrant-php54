@@ -12,13 +12,18 @@ The intended use is for unit testing some packages, it has the following configu
 at the time of writing. Almost every package uses composer which isn't bundled in at the moment, but I plan to.
 
 ## Installation:
+
+This project is meant to be submoduled in to your project and get you going. This is the ideal setup:
+
+```
+git submodule add https://github.com/forceedge01/vagrant-php54 && cd vagrant-php54 && vagrant up
+```
+
 You will need to install virtualbox to get this running. If running on ubuntu, install it via the package manager 'apt-get' as opposed to the GUI version, it will give you less trouble.
 
 This vagrant box will sync the directories outside of its own folder, this is done so you can conveniently clone this repository inside your project root folder and perform a vagrant up and viola, you've got your environment ready.
 
 To get in the box, perform the usual vagrant ssh. Your project is synced in the /vagrant folder. If not refer to the Vagrantfile.
-
-Feel free to submodule this package into your project.
 
 ## Ubuntu only:
 You may run into the trouble of signing some kernel modules. Error you may get is:
