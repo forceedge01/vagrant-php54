@@ -42,6 +42,13 @@ Sign the module (vboxdrv for this example)
 ```
 sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vboxdrv)
 ```
+
+Perform the above for all modules located in the folder where vboxdrv is located, you can find out where vboxdrv is by executing:
+
+```
+modinfo -n vboxdrv
+```
+
 Register the keys to Secure Boot
 ```
 sudo mokutil --import MOK.der
