@@ -18,6 +18,8 @@ This vagrant box will sync the directories outside of its own folder, this is do
 
 To get in the box, perform the usual vagrant ssh. Your project is synced in the /vagrant folder. If not refer to the Vagrantfile.
 
+Feel free to submodule this package into your project.
+
 ## Ubuntu only:
 You may run into the trouble of signing some kernel modules. Error you may get is:
 
